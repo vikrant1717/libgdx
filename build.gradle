@@ -29,6 +29,15 @@ buildscript {
 
 plugins {
 	id "de.undercouch.download" version "5.0.1"
+	id "org.sonarqube" version "6.3.1.5724"
+	
+
+}
+sonar {
+  properties {
+    property "sonar.projectKey", "vikrant1717_libgdx"
+    property "sonar.organization", "vikrant1717"
+  }
 }
 
 apply from: "gradle/dependencies.gradle"
